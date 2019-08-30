@@ -1,0 +1,24 @@
+<div class="container-fluid">
+        <div class="backg-image">
+    <div class="register">
+    <h2>Registration</h2>
+    
+        <input type="text"  placeholder="Enter firstName" [(ngModel)]="first_name">
+       <input type="text"  placeholder="Enter lastname"  [(ngModel)]="last_name">
+         <input type="text"  placeholder="Enter Email" [(ngModel)]="email" >
+         <input type="text" placeholder="Enter mobile number" [(ngModel)]="phone_number">
+         <span style="color: red">{{phone_number|lengthValidate}}</span>
+         <input type="text" placeholder="Enter pan number" [(ngModel)]="PAN">
+         <input type="password" placeholder="Enter password" [(ngModel)]="password">
+         <span style="color: red">{{password|passwordValidate}}</span>
+         <input type="password" #pass placeholder="confirm password" [(ngModel)]="confirm_Password">
+         <span style="color: red">{{pass|checkMatch:password:confirm_Password }}</span> 
+
+          <br>
+         <input type="submit" (click)="Registration()" name="submit" value="REGISTER">
+        
+    
+    </div>
+    </div>
+    </div>
+  

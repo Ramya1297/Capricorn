@@ -1,0 +1,44 @@
+html,body{
+  background-image: url("../../assets/final11.jpg");
+}
+
+
+.backg-image {
+    
+    
+    height: auto;
+   width: 100%; 
+  
+   
+   /* background-image: url("../../assets/dbs1.jpg"); */
+   background-repeat: no-repeat;
+ 
+   position: relative;
+ }
+ .container-fluid{
+   max-width: 720px;
+   height: -webkit-fill-available;
+ }
+ .login {
+   text-align: center;
+   position: absolute;
+   top: 20%;
+   left: 30%;
+   transform: translate(-20%, 10%);
+   color: black;
+
+   
+ }
+ .login {
+  width: 420px;
+  height: 450px;
+  background: rgba(179, 163, 163, 0.5);
+  color: #fff;
+  top: 10%;
+  left: 35%;
+  position: absolute;
+  transform: translate(-10%,10%);
+  box-sizing: border-box;
+  padding: 10px 30px;
+
+ }

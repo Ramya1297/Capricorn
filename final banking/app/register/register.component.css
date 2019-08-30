@@ -1,0 +1,68 @@
+.backg-image {
+    
+    
+    height: auto;
+   width: 100%; 
+  
+     /* background-image: url("../../assets/dbs1.jpg"); */
+   background-repeat: no-repeat;
+ 
+   position: relative;
+ }
+ .container-fluid{
+   max-width: 720px;
+   max-height: 1024px;
+   height: -webkit-fill-available;
+ }
+ .register {
+   text-align: left;
+   position: relative;
+   top: 5%;
+   left: 10%;
+   transform: translate(-10%, 3%);
+   color:black;
+ }
+ .register{
+  width: 420px;
+  height: 590px;
+  /* background: rgba(57, 57, 221, 0.5); */
+/* background: transparent; */
+  color: #000;
+  top:10%;
+  left: 40%;
+  position: absolute;
+  transform: translate(10%,20%);
+  box-sizing: border-box; 
+padding: 50px 50px;
+}
+.register h1{
+  text-align: center;
+
+  margin: 0;
+  padding: 25px;
+  font-weight: bold;
+}
+.register input{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.register input[type="text"], input[type="password"]
+{
+  border: none;
+  border-bottom: 1px solid #000;
+/* background: transparent;   */
+  outline: navajowhite;
+  height: 40px;
+  color:black;
+  font-size: 16px;
+}
+.register input[type="submit"]
+{
+  border:none;
+  outline: none;
+  height: 40px;
+  background: #4feb0d;
+  color:rgb(212, 228, 211);
+  font-size: 18px;
+  border-radius: 20px;
+}

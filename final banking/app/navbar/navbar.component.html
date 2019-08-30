@@ -1,0 +1,162 @@
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Home</a>
+      </div>
+      <ul class="nav navbar-nav">
+      <li><a routerLink="/" >About</a></li>
+    <li><a routerLink="/" >services</a></li>
+    <li><a routerLink="/" >Contact Us</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a [routerLink]="['/register']"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a [routerLink]="['/login']"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div id="container1">
+      <div
+        ng2-carouselamos
+        class="slides-wrapper"
+        [items]="items"
+        [width]="1900"
+       
+        [$prev]="prev"
+        [$next]="next"
+        [$item]="item"
+      >
+      </div>
+    
+
+    <ng-template #prev>
+      <img src="assets/left-arrow.png" id="left" />
+    </ng-template>
+    <ng-template #next>
+      <img src="assets/right-arrow.png" id="right" />
+    </ng-template>
+    <ng-template #item let-item let-i="index">
+
+        <div class="items">
+          <img src="{{ item.name }}">
+        </div>
+
+    </ng-template>
+    <div class="container">
+
+        <h1 style="color:red" >Welcome to Bank of Hyatt</h1> <br/>
+    
+        <!-- Marketing Icons Section -->
+        <div class="container">
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="card-body">
+                    <h2 class="card-title">Foreign Exchange Rates</h2>
+                  <p class="class-text"  style="font-size:14px" >Find the latest foreign exchange rate in Rupee and foreign currency by DBS here.</p> 
+                 </div>
+                 <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="card-body">
+                            <h2 class="card-title">Interest Rates</h2>
+                          <p class="class-text" style="font-size:14px" >Find the latest Deposit rates in Rupee and foreign currency by DBS here.</p> 
+                         </div>
+                         <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                            </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                  <div class="card-body">
+                                    <h2 class="card-title">Pay with ease</h2>
+                                  <p class="class-text" style="font-size:14px">Fast and convenient ways to pay your bills and transfer funds.</p> 
+                                 </div>
+                                 <div class="card-footer">
+                                    <a href="#" class="btn btn-primary">Learn More</a>
+                                    </div>
+                                    </div>
+                
+              
+                    </div>
+                    </div>
+                    </div>
+                    <br/>
+                    
+  <div class="container">
+      <h2>Awards</h2>
+      <hr>
+    <h4 style="line-height: 1.4; font-family:Times New Roman" >DBS is honoured to be recognised as the Bank of the Year, Asia by The Banker, a member of the Financial Times Group, and also as the Derivatives House of the Year, Asia ex-Japan by Asia Risk.
+
+We would like to dedicate our progress over 
+the years to each and every one of our customers and 
+employees in the region. Your belief in DBS inspires us to continuously lead the way and shape the future of banking in Asia.
+
+    </h4>
+
+    <hr>
+    <div class="row">
+        <div class="col-sm-3">
+              <img   #imgstatus  src="assets/best1.png"/><br/>
+              <h5  >The Asset: Best in Treasury & Working Capital 2012</h5>
+            <h6>2012</h6>      
+            </div>
+
+                  <div class="col-sm-3">
+              <img   #imgstatus  src="assets/best2.png"/><br/>
+              <h5>Best Foreign Bank Asset Quality</h5>
+              <h6>2011</h6>
+                  </div>
+                 <div class="col-sm-3">
+                  <img   #imgstatus  src="assets/best3.png"/><br/>
+                  <h5>Rising Star Cash Management Bank Award</h5>
+                <h6>2010</h6>  
+                </div>
+
+                  <div class="col-sm-3">
+              <img   #imgstatus  src="assets/best4.png"/><br/>
+              <h5  >India's Fastest Growing Small Bank</h5>
+            <h6>2010</h6>      
+            </div>
+         
+
+                      
+             
+                  </div>
+
+            
+</div>
+<br/>
+<div class="footer">
+  <br/>
+<h4>Useful links</h4>
+<ul>
+   <li><a href="#">Annual Report</a></li>
+   <li><a href="#"> Banking Forms</a>
+   </li>
+   <li><a href="#"> Banking Forms</a></li>
+    <li> <a href="#" >Commission Structure for Investments & Insurance Products</a>
+    </li>
+    <li><a href="#"> CSR Policy</a>
+    </li>
+    <li><a href="#"> Current Acct Svc Charges & Fees
+      </a>
+      </li>
+      <li><a href="#" >Customer Rights Policy </a>
+      </li>
+      <li> <a href="#">Customer Service Policy</a>
+      </li>
+      <li><a href="#">Interest Rates</a>
+        </li>
+        <li><a href="#"> Regulatory Disclosure</a>
+          </li>
+</ul>
+<br/>
+</div>
+
+
+  
+
+  

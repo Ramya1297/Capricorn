@@ -1,0 +1,44 @@
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="container">
+    <div class="view-account">
+        
+            <div class="module-inner">
+                <div class="side-bar">
+                    
+            		<nav class="side-menu">
+        				<ul class="nav">
+        					<li><a [routerLink]="['/dashboard']"><span class="fa fa-user"></span> My Profile</a></li>
+                            <li><a [routerLink]="['/balance']"><span class="fa fa-credit-card"></span> View Balance</a></li>
+        					<li><a [routerLink]="['/transfer']"><span class="fa fa-credit-card"></span> Make a Transaction</a></li>
+        				    <li><a [routerLink]="['/update']"><span class="fa fa-cog"></span> Profile Settings</a></li>
+                            <li  class="active"><a [routerLink]="['/add']"><span class="fa fa-credit-card"></span> Add Account</a></li>
+                            <li><a [routerLink]="['/accstmt']"><span class="fa fa-credit-card"></span> View Account statement</a></li>
+                            <li><a [routerLink]="['/logout']"><span class="fa fa-clock-o"></span> Logout</a></li>
+        				</ul>
+        			</nav>
+                </div>
+
+                <div class="content-panel">
+                        <form class="form-horizontal">
+                        <fieldset class="fieldset">
+                                <div class="form-horizontal">
+                                <h3 >Please choose the type of account</h3><br/>
+
+                                <select class="form-control" [(ngModel)]="account_type" [ngModelOptions]="{standalone: true}">
+                           <option *ngFor="let o of options">
+                              {{o}}
+                           </option>
+                        </select>
+                        <br/>
+
+                        <button  class="btn btn-primary" (click)="Create()">Create</button>
+                        
+                       </div>                  
+                        </fieldset>
+                    </form>                   
+                </div>
+        
+    </div>
+</div>
+
+{{account_type}}
